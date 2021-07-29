@@ -14,10 +14,10 @@
 // Route::get('/', function () {
 //     return view('pages/index');
 // });
-use App\Http\Controllers\helloController;
-Route::get('/', 'helloController@index');
-Route::get('contact/us','helloController@contact')->name('contact');
-Route::get('about/us','helloController@about')->name('about');
+
+Route::get('/', 'App\Http\Controllers\helloController@index');
+Route::get('contact/us','App\Http\Controllers\helloController@contact')->name('contact');
+Route::get('about/us','App\Http\Controllers\helloController@about')->name('about');
 
 //category crud
 Route::get('all/category','boloController@AllCategory')->name('all.category'); 
