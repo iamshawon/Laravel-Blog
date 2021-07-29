@@ -20,13 +20,13 @@ Route::get('contact/us','HelloController@contact')->name('contact');
 Route::get('about/us','HelloController@about')->name('about');
 
 //category crud
-Route::get('all/category','boloController@AllCategory')->name('all.category'); 
-Route::get('add/category','boloController@AddCategory')->name('add.category');
-Route::post('store/category','boloController@StoreCategory')->name('store.category');
-Route::get('view/category/{id}' , 'boloController@ViewCategory');
-Route::get('delete/category/{id}' , 'boloController@DeleteCategory');
-Route::get('edit/category/{id}' , 'boloController@EditCategory');
-Route::post('update/category/{id}' , 'boloController@UpdateCategory');
+Route::get('all/category','BoloController@AllCategory')->name('all.category'); 
+Route::get('add/category','BoloController@AddCategory')->name('add.category');
+Route::post('store/category','BoloController@StoreCategory')->name('store.category');
+Route::get('view/category/{id}' , 'BoloController@ViewCategory');
+Route::get('delete/category/{id}' , 'BoloController@DeleteCategory');
+Route::get('edit/category/{id}' , 'BoloController@EditCategory');
+Route::post('update/category/{id}' , 'BoloController@UpdateCategory');
 
 //post crud
 Route::get('write/post','PostController@writePost')->name('write.post');
