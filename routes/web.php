@@ -15,9 +15,9 @@
 //     return view('pages/index');
 // });
 
-Route::get('/', 'App\Http\Controllers\helloController@index');
-Route::get('contact/us','App\Http\Controllers\helloController@contact')->name('contact');
-Route::get('about/us','App\Http\Controllers\helloController@about')->name('about');
+Route::get('/', 'App\Http\Controllers\HelloController@index');
+Route::get('contact/us','App\Http\Controllers\HelloController@contact')->name('contact');
+Route::get('about/us','App\Http\Controllers\HelloController@about')->name('about');
 
 //category crud
 Route::get('all/category','boloController@AllCategory')->name('all.category'); 
